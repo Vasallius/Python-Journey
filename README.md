@@ -6,7 +6,7 @@ Greetings, my name is Jed and this repository serves as a collection of all my p
 
 This folder contains files related to the Python For Everybody Specialization Course offered at https://www.coursera.org/specializations/python 
 
-### Automate the Boring Stuff
+### Automate the Boring Stuff With Python
 
 This folder contains files related to the book "Automate the Boring Stuff With Python" authored by Al Sweigart. Book can be found here: https://automatetheboringstuff.com/2e/chapter0/
 
