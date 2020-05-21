@@ -44,3 +44,4 @@ To be able to use regex functions we must first `import re`
 - `.` = wildcard character, match any character except newline
 
 - can pass `re.DOTALL` as second argument to `re.compile` to match ***all*** characters
+- regex is ***case-sensitive*** , pass `re.IGNORECASE` as second argument to `re.compile` to be ***case-insensitive*** 
