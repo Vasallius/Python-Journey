@@ -18,3 +18,7 @@
   * [Table Printer](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch6-Manipulating%20Strings/table_printer.py)
   * [Zombie Dice Bots](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch6-Manipulating%20Strings/zombiedice_bots.py)
 
+* Chapter 7 - Pattern Matching and Regular Expressions:
+  * [Date Detection](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch7-Pattern%20Matching%20and%20Regular%20Expressions/date_detection.py)
+  * [Strong Password Detection](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch7-Pattern%20Matching%20and%20Regular%20Expressions/strong_password_detection.py)
+  * [Regex Strip](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch7-Pattern%20Matching%20and%20Regular%20Expressions/regex_strip.py)
