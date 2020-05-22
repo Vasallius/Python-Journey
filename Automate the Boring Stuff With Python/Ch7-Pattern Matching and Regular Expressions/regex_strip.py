@@ -12,7 +12,7 @@ character_to_be_removed = input(
     "Enter character to be stripped (pressing Enter removes whitespace left and right of string)")
 
 # Here, we set regex pattern to capture the nonwhitespace part of the string and store it in trimmed_text variable
-regex_pattern = re.compile(r'^(\s*)(.*)(\s*)$')
+regex_pattern = re.compile(r'^(\s*)(.*?)(\s*)$')
 mo = re.search(regex_pattern, string_to_be_formatted)
 trimmed_text = mo.group(2)
 
