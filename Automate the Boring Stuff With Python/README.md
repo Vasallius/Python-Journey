@@ -22,3 +22,7 @@
   * [Date Detection](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch7-Pattern%20Matching%20and%20Regular%20Expressions/date_detection.py)
   * [Strong Password Detection](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch7-Pattern%20Matching%20and%20Regular%20Expressions/strong_password_detection.py)
   * [Regex Strip](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch7-Pattern%20Matching%20and%20Regular%20Expressions/regex_strip.py)
+
+* Chapter 8 - Input Validation:
+  * [Sandwich Maker](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch8-Input%20Validation/sandwich_maker.py)
+  * [Create Your Own Multiplication Quiz](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch8-Input%20Validation/multiplication_quiz.py)
