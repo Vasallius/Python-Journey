@@ -1,7 +1,6 @@
 # Vasallius
 
 import os
-import glob
 import shutil
 from pathlib import Path
 
