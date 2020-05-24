@@ -26,3 +26,8 @@
 * Chapter 8 - Input Validation:
   * [Sandwich Maker](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch8-Input%20Validation/sandwich_maker.py)
   * [Create Your Own Multiplication Quiz](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch8-Input%20Validation/multiplication_quiz.py)
+
+* Chapter 9 - Reading and Writing Files:
+  * [Extended Multi-clipboard](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch9-Reading%20and%20Writing%20Files/multi_clipboard.py)
+  * [Mad Libs](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch9-Reading%20and%20Writing%20Files/mad_libs.py)
+  * [Regex Search](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch9-Reading%20and%20Writing%20Files/regex_search.py)
