@@ -31,3 +31,8 @@
   * [Extended Multi-clipboard](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch9-Reading%20and%20Writing%20Files/multi_clipboard.py)
   * [Mad Libs](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch9-Reading%20and%20Writing%20Files/mad_libs.py)
   * [Regex Search](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch9-Reading%20and%20Writing%20Files/regex_search.py)
+
+* Chapter 10 - Organizing Files:
+  * [Select Copy](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch10-Organizing%20Files/select_copy.py)
+  * [Deleting Unneeded Files](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch10-Organizing%20Files/deleting_unneeded_files.py)
+  * [Filling in the Gaps](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch10-Organizing%20Files/filling_in_the_gaps.py)
