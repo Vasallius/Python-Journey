@@ -39,3 +39,9 @@
 
 * Chapter 11 - Debugging:
   * [Debugging Coin Toss](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch11-Debugging/debugging_coin_toss.py)
+
+* Chapter 12 - Web Scraping:
+  * [Command Line Emailer](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch12-Web%20Scraping/command_line_emailer.py)
+  * [Image Site Downloader](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch12-Web%20Scraping/image_site_downloader.py)
+  * [2048](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch12-Web%20Scraping/2048.py)
+  * [Link Verification](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch12-Web%20Scraping/link_verification.py)
