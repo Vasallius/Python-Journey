@@ -33,5 +33,3 @@ for link in links:
         print(link)
     elif res.status_code == 404:
         print(f"{link} returned a 404 error")
-
-print(len(links))
