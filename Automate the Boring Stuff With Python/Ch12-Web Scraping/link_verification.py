@@ -30,6 +30,6 @@ for link in links:
 
     # Check for 404 error
     if res.status_code == 200:
-        print(link)
+        pass
     elif res.status_code == 404:
         print(f"{link} returned a 404 error")
