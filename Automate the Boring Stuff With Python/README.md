@@ -36,3 +36,6 @@
   * [Select Copy](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch10-Organizing%20Files/select_copy.py)
   * [Deleting Unneeded Files](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch10-Organizing%20Files/deleting_unneeded_files.py)
   * [Filling in the Gaps](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch10-Organizing%20Files/filling_in_the_gaps.py)
+
+* Chapter 11 - Debugging:
+  * [Debugging Coin Toss](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch11-Debugging/debugging_coin_toss.py)
