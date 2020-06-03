@@ -45,3 +45,10 @@
   * [Image Site Downloader](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch12-Web%20Scraping/image_site_downloader.py)
   * [2048](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch12-Web%20Scraping/2048.py)
   * [Link Verification](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch12-Web%20Scraping/link_verification.py)
+  
+ * Chapter 13 - Working with Excel Spreadsheets:
+   * [Multiplication Table Maker](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch13-Working%20With%20Excel%20Spreadsheets/multiplication_table_maker.py)
+   * [Blank Row Inserter](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch13-Working%20With%20Excel%20Spreadsheets/blank_row_inserter.py)
+   * [Spreadsheet Cell Inverter](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch13-Working%20With%20Excel%20Spreadsheets/spreadsheet_cell_inverter.py)
+   * [Text Files to Spreadsheet](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch13-Working%20With%20Excel%20Spreadsheets/textfiles_to_spreadsheet.py)
+   * [Spreadsheet to Text Files](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch13-Working%20With%20Excel%20Spreadsheets/spreedsheet_to_textfiles.py)
