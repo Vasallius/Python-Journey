@@ -52,3 +52,8 @@
    * [Spreadsheet Cell Inverter](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch13-Working%20With%20Excel%20Spreadsheets/spreadsheet_cell_inverter.py)
    * [Text Files to Spreadsheet](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch13-Working%20With%20Excel%20Spreadsheets/textfiles_to_spreadsheet.py)
    * [Spreadsheet to Text Files](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch13-Working%20With%20Excel%20Spreadsheets/spreedsheet_to_textfiles.py)
+   
+ * Chapter 14 - Working with Google Sheets:
+   * [Downloading Google Forms Data](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch14-Working%20with%20Google%20Sheets/downloading_google_forms_data.py)
+   * [Converting Spreadsheets to Other Formats](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch14-Working%20with%20Google%20Sheets/converting_spreadsheets_to_other_formats.py)
+   * [Finding Mistakes in a Spreadsheet](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch14-Working%20with%20Google%20Sheets/finding_mistakes_in_a_spreadsheet.py)
