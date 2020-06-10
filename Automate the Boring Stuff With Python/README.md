@@ -57,3 +57,16 @@
    * [Downloading Google Forms Data](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch14-Working%20with%20Google%20Sheets/downloading_google_forms_data.py)
    * [Converting Spreadsheets to Other Formats](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch14-Working%20with%20Google%20Sheets/converting_spreadsheets_to_other_formats.py)
    * [Finding Mistakes in a Spreadsheet](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch14-Working%20with%20Google%20Sheets/finding_mistakes_in_a_spreadsheet.py)
+
+ * Chapter 15 - Working with PDF and Word Documents:
+  
+ * Chapter 16 - Working with CSV Files and JSON Data:
+   * [Excel to CSV Converter](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch16-Working%20with%20CSV%20Files%20and%20JSON%20Data/excel_to_csv_converter.py)
+ 
+ * Chapter 17 – Keeping Time, Scheduling Tasks, and Launching Programs:
+
+ * Chapter 18 – Sending Email and Text Messages:
+ 
+ * Chapter 19 – Manipulating Images:
+ 
+ * Chapter 20 – Controlling the Keyboard and Mouse with GUI Automation:
