@@ -59,7 +59,11 @@
    * [Finding Mistakes in a Spreadsheet](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch14-Working%20with%20Google%20Sheets/finding_mistakes_in_a_spreadsheet.py)
 
  * Chapter 15 - Working with PDF and Word Documents:
-  
+   * [PDF Paranoia - Encrypt](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch15-Working%20with%20PDF%20and%20Word%20Documents/pdf_paranoia_encrypt.py)
+   * [PDF Paranoia - Decrypt](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch15-Working%20with%20PDF%20and%20Word%20Documents/pdf_paranoia_decrypt.py)
+   * [Custom Invitation as Word Documents](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch15-Working%20with%20PDF%20and%20Word%20Documents/custom_invitation_as_word_documents.py)
+   * [Brute Force PDF Password Breaker](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch15-Working%20with%20PDF%20and%20Word%20Documents/brute_force_pdf_password_breaker.py)
+   
  * Chapter 16 - Working with CSV Files and JSON Data:
    * [Excel to CSV Converter](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch16-Working%20with%20CSV%20Files%20and%20JSON%20Data/excel_to_csv_converter.py)
  
