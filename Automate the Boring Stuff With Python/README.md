@@ -68,6 +68,8 @@
    * [Excel to CSV Converter](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch16-Working%20with%20CSV%20Files%20and%20JSON%20Data/excel_to_csv_converter.py)
  
  * Chapter 17 – Keeping Time, Scheduling Tasks, and Launching Programs:
+   *[Prettified Stopwatch](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch17-Keeping%20Time%2C%20Shcheduling%20Tasks%2C%20and%20Launching%20Programs/prettified_stopwatch.py)
+   *[Scheduled Web Comic Downloader](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch17-Keeping%20Time%2C%20Shcheduling%20Tasks%2C%20and%20Launching%20Programs/scheduled_web_comic_downloader.py)
 
  * Chapter 18 – Sending Email and Text Messages:
  
