@@ -1,6 +1,6 @@
 # Vasallius
 
-import imapclient, imaplib, webbrowser, bs4, pprint, pyzmail
+import imapclient, imaplib, webbrowser, bs4, pyzmail
 
 email = input('Email: ')
 password = input('Password: ')
@@ -15,18 +15,20 @@ unsub_links = []
 
 for index, uid in enumerate(UIDs):
     message = pyzmail.PyzMessage.factory(rawmessages[UIDs[index]][b'BODY[]'])
-# if message.text_part != None:
-#     pprint.pprint(message.text_part.get_payload().decode(message.text_part.charset))
-# else:
-#     pass
     if message.html_part != None:
         message_body = message.html_part.get_payload().decode(message.html_part.charset)
         soup = bs4.BeautifulSoup(message_body, 'html.parser')
         for link in soup.find_all('a'):
             if 'unsubscribe' in link.text.lower():
                 unsub_links.append(link.get('href'))
+            elif 'unsubscribe' in link:
+                unsub_links.append(link)
+            else:
+                pass
     else:
         pass
 
 for unsub_link in unsub_links:
     webbrowser.open(unsub_link)
+
+print('Check google chrome for opened tabs.')
