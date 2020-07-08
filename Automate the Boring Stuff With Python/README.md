@@ -72,7 +72,11 @@
    * [Scheduled Web Comic Downloader](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch17-Keeping%20Time%2C%20Shcheduling%20Tasks%2C%20and%20Launching%20Programs/scheduled_web_comic_downloader.py)
 
  * Chapter 18 – Sending Email and Text Messages:
- 
+   * [Random Chore Assignment Emailer](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch18-Sending%20Email%20and%20Text%20Messages/random_chore_assignment_emailer.py)
+   * [Umbrella Reminder](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch18-Sending%20Email%20and%20Text%20Messages/umbrella_reminder.py)
+   * [Auto Unsubscriber](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch18-Sending%20Email%20and%20Text%20Messages/auto_unsubscriber.py)
+   * [Controlling Your Computer Through Email](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch18-Sending%20Email%20and%20Text%20Messages/controlling_computer_through_email.py)
+   
  * Chapter 19 – Manipulating Images:
  
  * Chapter 20 – Controlling the Keyboard and Mouse with GUI Automation:
