@@ -78,5 +78,8 @@
    * [Controlling Your Computer Through Email](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch18-Sending%20Email%20and%20Text%20Messages/controlling_computer_through_email.py)
    
  * Chapter 19 – Manipulating Images:
+   * [Extending and Fixing the Chapter Project Programs](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch19-Manipulating%20Images/resize_and_add_logo.py)
+   * [Identifying Photo Folders on the Hard Drive](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch19-Manipulating%20Images/identifying_photo_folders_in_hard_drive.py)
+   * [Custom Seating Cards](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch19-Manipulating%20Images/custom_seating_cards.py)
  
  * Chapter 20 – Controlling the Keyboard and Mouse with GUI Automation:
