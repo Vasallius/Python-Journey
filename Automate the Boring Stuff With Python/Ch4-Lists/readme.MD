@@ -16,6 +16,25 @@ _Note:_ We can instead ask the user for what list to view, however, that require
 
 Taken from the book, this program aims to do the following:
 
+> Write a program to find out how often a streak of six heads or a streak of six tails comes up in a randomly generated list of heads and tails. Your program breaks up the experiment into two parts: the first part generates a list of randomly selected 'heads' and 'tails' values, and the second part checks if there is a streak in it. Put all of this code in a loop that repeats the experiment `10,000` times so we can find out what percentage of the coin flips contains a streak of six heads or tails in a row.
+
+To start off, at `Line 3`, we import the `random` module to handle the generation of `heads` and `tails` in the forms of `0` and `1`.
+
+Our main program essentially does two things:
+
+1. Generate a list of 100 items, either being `H` or `T`.
+2. Check if a streak of `6` heads or tails occur.
+
+`Lines 10-14`: We have a loop that runs 100 times and each time it runs, it generates a `random number` using `random.randint`. Depending on the number that was produced, we append `H` or `T` to `master_list`.
+
+`Lines 16:20`: Per item, we check up to the next 5 items whether they're all `H` or `T`. _We used `94` because if we used a value higher than that, we'll encounter the `IndexError`_. Once a streak is found, the counter variable (`number_of_streaks`) is incremented by `1`.
+
+Finally, we take this `number_of_streaks` and divide by `10,000` then multiply `100` to get the percentage. Take note that we used 'f-strings` instead of the traditional formatting the author used in the book.
+
+For more information on `f-strings`, check this: <https://realpython.com/python-f-strings/>
+
+The result is most probably around `80%`.
+
 ## Character Picture Grid
 
 Taken from the book, this program aims to do the following:
