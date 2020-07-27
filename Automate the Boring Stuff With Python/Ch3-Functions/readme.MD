@@ -4,7 +4,7 @@ This serves as the documentation for the practice projects under this folder. Fe
 
 ## Collatz Sequence
 
-Taken from the book, this program aims to do the following.
+Taken from the book, this program aims to do the following:
 
 > Write a function named collatz() that has one parameter named number. If number is even, then collatz() should print number // 2 and return this value. If number is odd, then collatz() should print and return 3 \* number + 1.
 
@@ -21,7 +21,7 @@ We signify the intent of the program with the `print` statement at line 3 but th
 
 ## Input Validation
 
-Taken from the book, this program aims to do the following,
+Taken from the book, this program aims to do the following:
 
 > Add try and except statements to the previous project to detect whether the user types in a noninteger string. Normally, the int() function will raise a ValueError error if it is passed a noninteger string, as in int('puppy'). In the except clause, print a message to the user saying they must enter an integer.
 
