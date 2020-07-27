@@ -1,6 +1,6 @@
 # Chapter 3 - Functions
 
-This serves as the documentation for the practice projects under this folder. Feel free to correct me for errors that I may have committed. Contact me through email at masterjed7262@gmail.com
+This serves as the documentation for the practice projects under this folder. Feel free to correct me for errors that I may have committed. Contact me through email at masterjed7262@gmail.com.
 
 ## Collatz Sequence
 
