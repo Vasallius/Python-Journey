@@ -1,31 +1,28 @@
-#commaCode |
+# Comma Code
 
-import copy
-
-print('What list do you wanna view?')
-print('The following lists are: Sizes, Colors, and Prices.')
-
+# Defined lists
 Sizes = ['small', 'medium', 'large', 'extra-large']
 Colors = ['red', 'blue', 'green']
 Prices = ['100 USD', '200USD']
-
-#make input value refer to variable instead of a string
-
-
-list = eval(input())
-
-def enumerate(listName):
-
-    for i in range(len(list)-1):
-       print(list[i], ', ', end='')
-
-    print('and ' ,end='')
-    print(list[-1])
+One_item = ['hi']
+Empty = []
 
 
-enumerate(list)
+def enumerate(list_name):  # Function takes in a list
+    # Print only items before the last item
+    if len(list_name) > 2:
+        for item in list_name[:-1]:
+            print(item, ', ', sep='', end='')
+        print('and ', end='')
+        print(list_name[-1])
+    elif len(list_name) == 2:
+        print(list_name[0], 'and', list_name[1])
+    elif len(list_name) == 1:
+        print(list_name[0])
+    else:
+        print('There are no items in this list.')
 
 
-
-
-
+# Replace list with any list you want
+# Possible lists to pass in: Sizes, Colors, Prices, One_Item, and Empty
+enumerate(Empty)
