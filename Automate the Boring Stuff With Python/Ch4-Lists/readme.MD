@@ -37,4 +37,10 @@ The result is most probably around `80%`.
 
 ## Character Picture Grid
 
-Taken from the book, this program aims to do the following:
+Taken from the book, this program aims to transform the given list into a heart-looking list.
+
+`Lines 18:21`: We loop over each item in each list. We print each list's `1st item` **( [0][0], [1][0], ..., [9][0] )** then enter a new line, then print each list's `2nd item` **( [0][1], [1][1], ..., [9][1] )** and enter another line. You get the idea. This continues until each item of each list has already been printed.
+
+---
+
+Last Edited: 07/27/20 5:22 PM
