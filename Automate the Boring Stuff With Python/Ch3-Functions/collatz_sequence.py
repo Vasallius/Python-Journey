@@ -10,10 +10,10 @@ def collatz(number):  # function takes in user input number
         return 3 * number + 1
 
 
-number = int(input())  # inputted number is assigned to variable number
+number = int(input())
 result = collatz(number)
 print(result)
 
-while result != 1:
+while result != 1:  # Looping mechanism
     result = collatz(result)
     print(result)
