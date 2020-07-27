@@ -1,6 +1,5 @@
 # The Collatz Sequence
 
-
 print('Input a number.')
 
 
