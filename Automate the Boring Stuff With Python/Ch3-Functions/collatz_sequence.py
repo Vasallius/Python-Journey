@@ -1,22 +1,20 @@
-#The Collatz Sequence
-# credits to Jed
+# The Collatz Sequence
+
 
 print('Input a number.')
 
-def collatz(number): #function takes in user input number
+
+def collatz(number):  # function takes in user input number
     if number % 2 == 0:
         return number // 2
     elif number % 2 == 1:
         return 3 * number + 1
 
 
-number = int(input()) # inputted number is assigned to variable number
-r = collatz(number)
-print (r)
+number = int(input())  # inputted number is assigned to variable number
+result = collatz(number)
+print(result)
 
-while r != 1:
-    r = collatz(r)
-    print (r)
-print('congrats, you have solved the seuquence')
-
-
+while result != 1:
+    result = collatz(result)
+    print(result)
