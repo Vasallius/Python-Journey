@@ -32,6 +32,15 @@ Inventory:
 Total number of items: 62
 ```
 
+## List to Dictionary Function
+
+Taken from the book, this program aims to do the following:
+> Write a function that takes in a `dict` object containing items to be added to the current inventory.
+
+The `display_inventory` function is taken from the previous exercise, **Fantasy Game Inventory**.
+
+`Lines 13-16`: We take each item in the given dictionary and make it a `key` in the current inventory. If it still doesn't exist yet, we assign the value `0` using the `.get()` method then add `1` to it. If it exists, then add `1`. This way we can handle existing items and non-existing items.
+
 ---
 
 Last Edited: 07/28/2020 1:30 PM
