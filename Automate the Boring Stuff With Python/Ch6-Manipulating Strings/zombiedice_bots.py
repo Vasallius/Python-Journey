@@ -1,3 +1,5 @@
+# Zombiedice BOts
+
 import zombiedice
 import random
 
@@ -35,17 +37,25 @@ class RandomRoller:
         #     else:
         #         break
 
-class StopAfterTwoBrains(object):
-    """After the first roll, this bot always has a fifty-fifty chance of deciding to roll again or stopping."""
+class stop_after_two_brains(object):
+    ''' Bot stopped after rolling two brains'''
     def __init__(self, name):
         self.name = name
 
     def turn(self, gameState):
-        results = zombiedice.roll() # first roll
+        dice_roll_results = zombiedice.roll() # first roll
 
-        while results and random.randint(0, 1) == 0:
-            results = zombiedice.roll()
-class StopAfterTwoSG(object):
+        brain_count = 0
+        while dice_roll_results is not None:
+            brain_count += dice_roll_results['brains'] # Add number of brains collected from roll
+        
+            if brain_count < 2:
+                dice_roll_results = zombiedice.roll() # roll again
+            else:
+                break
+        
+        
+class stop_after_two_shotguns(object):
 
     def __init__(self, name):
         self.name = name
@@ -114,8 +124,8 @@ zombies = (
     zombiedice.examples.MinNumShotgunsThenStopsZombie(name='Stop at 2 Shotguns', minShotguns=2),
     zombiedice.examples.MinNumShotgunsThenStopsZombie(name='Stop at 1 Shotgun', minShotguns=1),
     RandomRoller(name='RandomRoller'),
-    StopAfterTwoBrains(name='StopAfterTwoBrains'),
-    StopAfterTwoSG(name='StopAfterTwoSG'),
+    stop_after_two_brains(name='StopAfterTwoBrains'),
+    stop_after_two_shotguns(name='StopAfterTwoShotguns'),
     Jhin(name='Jhin'),
     DUMBRIANE(name='DUMBRIANE')
 )
