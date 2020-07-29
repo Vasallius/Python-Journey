@@ -12,7 +12,7 @@ In its very essence, this program takes a list of lists and prints it nicely.
 
 `Lines 17-21:` We loop over the number of items (creating 4 rows) and then the number of lists (3 items per row) to create a beautiful table like this.
 
-```
+``` python
 apples   Alice    dogs
 oranges    Bob    cats
 cherries Carol   moose
@@ -20,4 +20,4 @@ banana   David   goose
 ```
 
 ---
-Last Edited: 07/28/2020 2:07 PM
+Last Edited: 07/28/2020 2:07 PM  
