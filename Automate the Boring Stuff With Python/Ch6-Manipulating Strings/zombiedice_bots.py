@@ -1,9 +1,12 @@
-# Zombiedice BOts
+# Zombiedice Bots
 
 import zombiedice
 import random
 
-class RandomRoller:
+
+class random_roller:
+    ''' A bot that, after the first roll, randomly decides if it will continue or stop '''
+
     def __init__(self, name):
         # All zombies must have a name:
         self.name = name
@@ -12,7 +15,7 @@ class RandomRoller:
         # gameState is a dict with info about the current state of the game.
         # You can choose to ignore it in your code.
 
-        diceRollResults = zombiedice.roll() # first roll
+        dice_roll_results = zombiedice.roll()  # first roll
         # roll() returns a dictionary with keys 'brains', 'shotgun', and
         # 'footsteps' with how many rolls of each type there were.
         # The 'rolls' key is a list of (color, icon) tuples with the
@@ -22,112 +25,118 @@ class RandomRoller:
         #  'rolls': [('yellow', 'brains'), ('red', 'footsteps'),
         #            ('green', 'shotgun')]}
 
-        # REPLACE THIS ZOMBIE CODE WITH YOUR OWN:
-        decision = random.randint(0,1)
-        if decision == 0:
-            diceRollResults = zombiedice.roll() # first roll
+        decision = random.randint(0, 1)
+        # 0 to roll, 1 to stop
+        while decision == 0:
+            dice_roll_results = zombiedice.roll()
+            decision = random.randint(0, 1)
 
-
-        # #brains = 0
-        # while diceRollResults is not None:
-        #     brains += diceRollResults['brains']
-        #
-        #     if brains < 2:
-        #         diceRollResults = zombiedice.roll() # roll again
-        #     else:
-        #         break
 
 class stop_after_two_brains(object):
-    ''' Bot stopped after rolling two brains'''
+    ''' A bot that stops rolling after it has rolled two brains '''
+
     def __init__(self, name):
         self.name = name
 
     def turn(self, gameState):
-        dice_roll_results = zombiedice.roll() # first roll
+        dice_roll_results = zombiedice.roll()  # first roll
 
         brain_count = 0
         while dice_roll_results is not None:
-            brain_count += dice_roll_results['brains'] # Add number of brains collected from roll
-        
+            # Add number of brains collected from roll
+            brain_count += dice_roll_results['brains']
+
             if brain_count < 2:
-                dice_roll_results = zombiedice.roll() # roll again
+                dice_roll_results = zombiedice.roll()  # roll again
             else:
                 break
-        
-        
+
+
 class stop_after_two_shotguns(object):
 
-    def __init__(self, name):
-        self.name = name
-
-    def turn(self, gameState):
-        diceRollResults = zombiedice.roll() # first roll
-
-        shotguncnt = 0
-        while diceRollResults is not None:
-
-            shotguncnt += diceRollResults['shotgun']
-
-            if shotguncnt < 2:
-                diceRollResults = zombiedice.roll()
-            else:
-                break
-
-class Jhin(object):
+    ''' A bot that stops rolling after it has rolled two shotguns '''
 
     def __init__(self, name):
         self.name = name
 
     def turn(self, gameState):
 
-        x = random.randint(1,4)
+        shotgun_count = 0
 
-        for y in range(x):
-            diceRollResults = zombiedice.roll()
+        dice_roll_results = zombiedice.roll()  # first roll
+        shotgun_count += dice_roll_results['shotgun']
+        while shotgun_count < 2:
+            dice_roll_results = zombiedice.roll()
 
-        shotguncnt = 0
+            try:
+                shotgun_count += dice_roll_results['shotgun']
+            except:
+                pass
 
-        while diceRollResults is not None:
 
-            shotguncnt += diceRollResults['shotgun']
+class roll_one_to_four(object):
 
-            if shotguncnt < 2:
-                diceRollResults = zombiedice.roll()
-            else:
-                break
-
-class DUMBRIANE(object):
+    ''' A bot that initially decides it’ll roll the dice one to four times, but will stop early if it rolls two shotguns '''
 
     def __init__(self, name):
         self.name = name
 
     def turn(self, gameState):
 
-        diceRollResults = zombiedice.roll()
+        number_of_rolls = random.randint(1, 4)
+        shotgun_count = 0
 
-        shotguncnt = 0
-        braincnt = 0
-        while diceRollResults is not None:
+        for roll in range(number_of_rolls):
+            dice_roll_results = zombiedice.roll()
 
-            shotguncnt += diceRollResults['shotgun']
-            braincnt += diceRollResults['brains']
+            try:
+                shotgun_count += dice_roll_results['shotgun']
+            except:
+                pass
 
-            print(shotguncnt,braincnt)
-
-            if shotguncnt < braincnt:
-                diceRollResults = zombiedice.roll()
-            else:
+            if shotgun_count == 2:
                 break
+            else:
+                pass
+
+
+class shotgun_over_brain(object):
+    ''' A bot that stops rolling after it has rolled more shotguns than brains '''
+
+    def __init__(self, name):
+        self.name = name
+
+    def turn(self, gameState):
+        shotgun_count = 0
+        brain_count = 0
+        dice_roll_results = zombiedice.roll()
+
+        if dice_roll_results['shotgun'] is not None:
+            shotgun_count += dice_roll_results['shotgun']
+        elif dice_roll_results['brain'] is not None:
+            brain_count += dice_roll_results['brains']
+
+        while shotgun_count < brain_count:
+            dice_roll_results = zombiedice.roll()
+
+            if dice_roll_results['shotgun'] is not None:
+                shotgun_count += dice_roll_results['shotgun']
+            elif dice_roll_results['brain'] is not None:
+                brain_count += dice_roll_results['brains']
+
+
 zombies = (
     zombiedice.examples.RandomCoinFlipZombie(name='Random'),
     zombiedice.examples.RollsUntilInTheLeadZombie(name='Until Leading'),
-    zombiedice.examples.MinNumShotgunsThenStopsZombie(name='Stop at 2 Shotguns', minShotguns=2),
-    zombiedice.examples.MinNumShotgunsThenStopsZombie(name='Stop at 1 Shotgun', minShotguns=1),
-    RandomRoller(name='RandomRoller'),
+    zombiedice.examples.MinNumShotgunsThenStopsZombie(
+        name='Stop at 2 Shotguns', minShotguns=2),
+    zombiedice.examples.MinNumShotgunsThenStopsZombie(
+        name='Stop at 1 Shotgun', minShotguns=1),
+    random_roller(name='RandomRoller'),
     stop_after_two_brains(name='StopAfterTwoBrains'),
     stop_after_two_shotguns(name='StopAfterTwoShotguns'),
-    Jhin(name='Jhin'),
-    DUMBRIANE(name='DUMBRIANE')
+    roll_one_to_four(name='RollsOneToFourTimes'),
+    shotgun_over_brain(name='Shotgun>Brain')
 )
 
 # Uncomment one of the following lines to run in CLI or Web GUI mode:
