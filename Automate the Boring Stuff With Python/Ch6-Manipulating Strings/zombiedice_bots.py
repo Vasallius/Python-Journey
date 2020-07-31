@@ -68,10 +68,8 @@ class stop_after_two_shotguns(object):
         while shotgun_count < 2:
             dice_roll_results = zombiedice.roll()
 
-            try:
+            if dice_roll_results['shotgun'] is not None:
                 shotgun_count += dice_roll_results['shotgun']
-            except:
-                pass
 
 
 class roll_one_to_four(object):
