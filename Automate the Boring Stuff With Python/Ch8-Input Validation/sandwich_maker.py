@@ -1,11 +1,12 @@
-# Vasallius
+# Sandwich Maker
 
-""" This program displays total price after making your custom sandwhich"""
+""" 
+Description:
+This program displays total price after making your custom sandwich.
+"""
 
+import pyinputplus as pyip
 
-import pyinputplus as pyip  # Import necessary modules
-
-# Initialize variables
 breadtypes = ['White', 'Wheat', 'Sourdough']
 proteintypes = ["chicken", "turkey", "ham", "tofu"]
 cheesetypes = ["cheddar", "Swiss", "mozzarella"]
@@ -16,32 +17,17 @@ pricelist = {"White": 20, "Wheat": 15, "Sourdough": 25,
 
 totalcost = 0
 
-# Functions that ask for user input and store them in a variable
-# Add price to variable totalcost
-bT = pyip.inputMenu(breadtypes,
-                    prompt=f'''What type of bread would you like ?
-* {breadtypes[0]} 
-* {breadtypes[1]} 
-* {breadtypes[2]} \n''')
+bread_type = pyip.inputMenu(breadtypes,
+                            prompt='What type of bread would you like ? \n')
+totalcost += pricelist[bread_type]
 
-totalcost += pricelist[bT]
+protein_type = pyip.inputMenu(proteintypes,
+                              prompt=f'What type of protein would you like ? \n')
+totalcost += pricelist[protein_type]
 
-pT = pyip.inputMenu(proteintypes,
-                    prompt=f'''What type of protein would you like ?
-* {proteintypes[0]} 
-* {proteintypes[1]} 
-* {proteintypes[2]}
-* {proteintypes[3]} \n''')
-
-totalcost += pricelist[pT]
-
-cT = pyip.inputMenu(cheesetypes,
-                    prompt=f'''What type of cheese would you like ?
-* {cheesetypes[0]} 
-* {cheesetypes[1]} 
-* {cheesetypes[2]} \n''')
-
-totalcost += pricelist[cT]
+cheese_type = pyip.inputMenu(cheesetypes,
+                             prompt=f'What type of cheese would you like ? \n')
+totalcost += pricelist[cheese_type]
 
 # Function that ask user for addons and increment totalcost by 5 per addon
 mayo = pyip.inputYesNo(prompt="Do you want to add mayo?\n")
@@ -57,5 +43,4 @@ tomato = pyip.inputYesNo(prompt="Do you want to add tomato?\n")
 if tomato == 'yes':
     totalcost += 5
 
-# Print total cost
-print(f"\nThank you for ordering. That would be {totalcost} $")
+print(f"\nThank you for ordering. That would be {totalcost}$")
