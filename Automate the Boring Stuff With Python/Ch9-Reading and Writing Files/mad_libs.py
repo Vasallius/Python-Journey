@@ -1,16 +1,23 @@
 # Mad Libs
 
-# Asking for user inputs
-adj = input("Enter an adjective: ")
-noun = input("Enter an noun: ")
-verb = input("Enter an verb: ")
-noun2 = input("Enter an noun: ")
+'''
+Description:
+Create a Mad Libs program that reads in text files and
+lets the user add their own text anywhere the word 
+ADJECTIVE, NOUN, ADVERB, or VERB appears in the text file.
+'''
 
-output_file = open('sample.txt', 'w+')
+with open('template.txt', 'r') as template_file:
+    string = template_file.read()
 
-# Substituting variables to placeholders
-string = f"""The {adj} panda walked to the {noun} and then {verb}. A nearby {noun2} 
-was unaffected by these events."""
+while True:
+    while 'ADJECTIVE' in string:
+        string = string.replace('ADJECTIVE', input('Enter an ADJECTIVE: '), 1)
+    while 'NOUN' in string:
+        string = string.replace('NOUN', input('Enter a NOUN: '), 1)
+    while 'VERB' in string:
+        string = string.replace('VERB', input('Enter a VERB: '), 1)
+    break
 
-output_file.write(string)
-output_file.close()
+with open('output.txt', 'w') as output_file:
+    output_file.write(string)
