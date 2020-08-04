@@ -1,4 +1,13 @@
-# Vasallius
+# Command Line Emailer
+# DOESN'T WORK ANYMORE !!!
+
+'''
+Description:
+Write a program that takes an email address and string of text on the command line 
+and then, using selenium, logs in to your email account and
+sends an email of the string to the provided address. 
+(You might want to set up a separate email account for this program.)
+'''
 
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -12,17 +21,20 @@ recipient_email = input("To whom would you like to send an email? ")
 body = input("Please enter message content: ")
 
 # Login Phase
-browser = webdriver.Firefox()
-browser.get(
-    'https://accounts.google.com/signin/v2/challenge/pwd?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=AddSession&cid=1&navigationDirection=forward&TL=AM3QAYYEkyzQ7AJkk0oHERU0GR_qY6l_h0MfbwkR-Q7J-PcPNdpcZq5uQucTitPb')
+browser = webdriver.Chrome()
+gmail = 'https://accounts.google.com/signin/v2/identifier?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F&hl=en-GB&flowName=GlifWebSignIn&flowEntry=ServiceLogin'
+browser.get(gmail)
+time.sleep(2)
 print("Logging in.")
 userElem = browser.find_element_by_id('identifierId')
 userElem.send_keys(email)
+time.sleep(3)
 userElem.send_keys(Keys.ENTER)
 time.sleep(3)
 passwordElem = browser.find_element_by_css_selector(
     "input[class='whsOnd zHQkBf']")
 passwordElem.send_keys(password)
+time.sleep(3)
 passwordElem.send_keys(Keys.ENTER)
 time.sleep(5)
 
