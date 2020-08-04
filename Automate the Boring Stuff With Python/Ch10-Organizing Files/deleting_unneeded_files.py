@@ -1,14 +1,22 @@
-# Vasallius
+# Deleting the Unneeded Files
+
+'''
+Description:
+Write a program that walks through a folder tree and searches for 
+exceptionally large files or folders—say, ones that have a file size of more than 100MB. 
+(Remember that to get a file’s size, you can use os.path.getsize() from the os module.) 
+Print these files with their absolute path to the screen.
+'''
 
 import os
-from pathlib import Path
 
-dir1 = Path(
-    r'C:\Users\Joseph\Desktop')  # Replace path with directory containing jpg and png files
-for root, dir, file in os.walk(dir1):
+directory = input('Enter directory path to examine: ')
+size_filter = int(input('Look for files greater than __MB: '))
 
-    for x in file:
-        filesize = os.path.getsize(f"{root}\\{x}")
-        # Check if filesize is over 100MB
-        if filesize > 100*1024*1024:
-            print(f"{root}\\{x}, filesize: {filesize/(1024*1024)} MB")
+for root, dir, filename in os.walk(directory):
+
+    for document in filename:
+        filesize = os.path.getsize(f"{root}\\{document}")
+        # 1 MB = 1024 * 1024 bytes
+        if filesize > size_filter * 1024 * 1024:
+            print(f"{root}\\{document}, filesize: {round(filesize/(1024*1024))} MB")
