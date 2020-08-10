@@ -1,6 +1,5 @@
-# Vasallius
+# Using the Clipboard to Read a Text Field
 
-# Import necessary modules
 import pyautogui
 import pyperclip
 

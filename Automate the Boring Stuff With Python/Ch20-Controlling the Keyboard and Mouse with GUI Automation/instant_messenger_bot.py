@@ -1,4 +1,4 @@
-# Vasallius
+# Instant Messenger Bot
 
 import pyautogui
 
