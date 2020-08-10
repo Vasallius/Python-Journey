@@ -1,6 +1,6 @@
-# Vasallius
+# Multiplication Table Maker
 
-# Import necesarry modules
+
 import openpyxl
 import sys
 from openpyxl.styles import Font
