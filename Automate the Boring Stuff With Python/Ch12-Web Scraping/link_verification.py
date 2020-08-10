@@ -1,6 +1,5 @@
-# Vasallius
+# Link Verification
 
-# Import necesarry modules
 import bs4
 import requests
 
@@ -11,12 +10,14 @@ res.raise_for_status
 
 # Get link elements
 soup = bs4.BeautifulSoup(res.text, 'html.parser')
-links_element = soup.select('a[href]')
+link_elements = soup.select('a[href]')
 
 # Place all links in a list
 links = []
-for link in links_element:
+for link in link_elements:
     links.append(link.get('href'))
+
+print('Broken links: ')
 
 for link in links:
     # Retrieve links
