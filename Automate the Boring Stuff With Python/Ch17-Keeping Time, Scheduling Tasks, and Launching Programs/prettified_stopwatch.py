@@ -1,13 +1,12 @@
-# Vasallius
+# Prettified Stopwatch
 
-# Import necessary modules
 import time
 import pyperclip
 
 start_button = input(
     'Press Enter to start stopwatch. Press Ctrl + C to quit.\n')
 
-# Only accept "Enter" to start the stop watch
+# Only accept "Enter" to start the stopwatch
 while True:
     if not len(start_button) < 1:
         start_button = input('Press enter to start stopwatch.\n')
