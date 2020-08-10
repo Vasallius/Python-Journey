@@ -1,13 +1,12 @@
-# Vasallius
+# Spreadsheet to Textfiles
 
-# Import necessary modules
 import openpyxl
 from openpyxl.utils import get_column_letter
 
 # Load workbook
-workbookname = input("Enter name of workbook to convert to text: ")
-wb = openpyxl.load_workbook(workbookname)
-sheet= wb.active
+excel_workbook = input("Enter name of workbook to convert to text: ")
+wb = openpyxl.load_workbook(excel_workbook)
+sheet = wb.active
 
 for column_number in range(sheet.max_column):
     # Make new text file per column
@@ -18,5 +17,5 @@ for column_number in range(sheet.max_column):
         try:
             fh.write(cell.value)
         except:
-            fh.write('')  
-    fh.close() 
+            fh.write('')
+    fh.close()

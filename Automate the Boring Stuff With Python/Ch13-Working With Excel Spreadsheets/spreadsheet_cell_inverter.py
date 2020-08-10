@@ -1,6 +1,5 @@
-# Vasallius
+# Spreadsheet Cell Inverter
 
-# Import necessary module
 import openpyxl
 
 # Load workbook

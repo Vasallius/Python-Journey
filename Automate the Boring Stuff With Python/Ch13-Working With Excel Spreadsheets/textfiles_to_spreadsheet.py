@@ -1,6 +1,5 @@
-# Vasallius
+# Textfiles to Spreadsheet
 
-# Import necessary modules
 import openpyxl
 from openpyxl.utils import get_column_letter
 
@@ -10,22 +9,23 @@ sheet = wb.active
 
 # Gather filenames
 files = input("Enter filenames, separated by a space: ").split()
-stringlenlist =[]
+string_len_list = []
 
-for x,filename in enumerate(files):
+for x, filename in enumerate(files):
     stringlist = []
     fh = open(filename)
 
     # Append each string and its length to list
     for line in fh.readlines():
         stringlist.append(line)
-        stringlenlist.append(len(line))
+        string_len_list.append(len(line))
 
     # Set the value of the cell to the string
     row_number = 1
     for string in stringlist:
         sheet[get_column_letter(x+1) + str(row_number)] = string
-        sheet.column_dimensions[get_column_letter(x+1)].width = max(stringlenlist)
+        sheet.column_dimensions[get_column_letter(
+            x+1)].width = max(string_len_list)
         row_number += 1
 
-wb.save('text.xlsx')
+wb.save('spreadsheet_from_text.xlsx')
