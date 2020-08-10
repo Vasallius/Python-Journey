@@ -1,4 +1,4 @@
-# Vasallius
+# PDF Paranoia Decrypt
 
 import os
 import PyPDF2
@@ -16,7 +16,7 @@ print('Now testing to decrypt...')
 for root, dir, file in os.walk(os.getcwd()):
 
     for filename in file:
-        # Skil non-encrypted PDFs
+        # Skip non-encrypted PDFs
         if not filename.endswith('_encrypted.pdf'):
             continue
         # Try to open PDFs

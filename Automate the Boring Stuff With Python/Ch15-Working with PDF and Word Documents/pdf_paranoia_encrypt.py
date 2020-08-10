@@ -1,6 +1,6 @@
-# Vasallius
+# PDF Paranoia Encrypt
 
-# Import necessary modules
+
 import os
 import PyPDF2
 import sys

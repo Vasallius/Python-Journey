@@ -1,6 +1,5 @@
-# Vasallius
+# Brute Force PDF Password Breaker
 
-# Import necessary modules
 import PyPDF2
 
 # Open dictionary file
@@ -22,9 +21,9 @@ pdfReader = PyPDF2.PdfFileReader(pdfObj)
 
 # Loop over the words and try to decrypt
 for word in word_list:
+    print(f'Trying {word}...')
     if pdfReader.decrypt(word) == 1:
         print(f'The password is {word}.')
         break
     else:
         pass
-    
