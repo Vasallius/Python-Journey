@@ -1,6 +1,5 @@
-# Vasallius
+# Blank Row Inserter
 
-# Import necessary modules
 import openpyxl
 import sys
 
