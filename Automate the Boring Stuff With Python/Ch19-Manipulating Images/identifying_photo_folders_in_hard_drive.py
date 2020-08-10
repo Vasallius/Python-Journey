@@ -1,4 +1,4 @@
-# Vasallius
+# Identifying Photo Folders in Hard Drive
 
 from PIL import Image
 import os
@@ -13,15 +13,16 @@ for foldername, subfolders, filenames in os.walk('C:\\'):
             continue    # skip to next filename
 
         # Open image file using Pillow.
-        try: 
-            img = Image.open(os.path.join(foldername,os.path.basename(filename)))
+        try:
+            img = Image.open(os.path.join(
+                foldername, os.path.basename(filename)))
             width, height = img.size
         except:
             print(f'Cannot open {filename} at {foldername}')
 
         # Check if width & height are larger than 500.
 
-        if width > 500 and height > 500 :
+        if width > 500 and height > 500:
             # Image is large enough to be considered a photo.
             numPhotoFiles += 1
         else:
@@ -33,4 +34,3 @@ for foldername, subfolders, filenames in os.walk('C:\\'):
 
     if numPhotoFiles > ((numNonPhotoFiles+numPhotoFiles)/2):
         print(foldername)
-    

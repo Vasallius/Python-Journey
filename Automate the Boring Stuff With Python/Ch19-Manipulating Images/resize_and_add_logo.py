@@ -1,4 +1,4 @@
-# Vasallius
+# Resize and Add Logo
 
 import os
 from PIL import Image
@@ -14,7 +14,7 @@ os.makedirs('withLogo', exist_ok=True)
 for filename in os.listdir('.'):
     if not (filename.lower().endswith('.png') or filename.lower().endswith('.jpg') or filename.lower().endswith('.gif') or filename.lower().endswith('.gif')) \
        or filename == LOGO_FILENAME:
-        continue # skip non-image files and the logo file itself
+        continue  # skip non-image files and the logo file itself
 
     im = Image.open(filename)
     width, height = im.size
