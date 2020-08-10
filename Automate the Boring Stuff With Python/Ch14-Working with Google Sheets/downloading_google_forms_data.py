@@ -1,9 +1,9 @@
-# Vasallius
+# Downloading Google Forms Data
 
-# Import necessary modules
 import ezsheets
 
 # Load the spreadsheet and the sheet
+# Replace with your spreadsheet id
 ss = ezsheets.Spreadsheet('1SZq-wSN_iWuOZENRrNfD_YcbK95p2mHCcw9WBeLSbmQ')
 sheet = ss[0]
 
@@ -19,11 +19,13 @@ for column in range(sheet.columnCount):
 column_data = sheet.getColumn(colnumber)
 email_list = column_data[1:]
 
+
 def filter_function(email):
-  if email == '':
-    return False
-  else:
-    return True
+    if email == '':
+        return False
+    else:
+        return True
+
 
 # Remove empty emails
 email_list = filter(filter_function, email_list)
