@@ -1,16 +1,20 @@
-# Vasallius
+# Auto Unsubscriber
 
-import imapclient, imaplib, webbrowser, bs4, pyzmail
+import imapclient
+import imaplib
+import webbrowser
+import bs4
+import pyzmail
 
 email = input('Email: ')
 password = input('Password: ')
 
 imaplib._MAXLINE = 1000000
-imap_object = imapclient.IMAPClient('imap.gmail.com',ssl=True)
-imap_object.login(email,password)
-imap_object.select_folder('INBOX',readonly=False)
+imap_object = imapclient.IMAPClient('imap.gmail.com', ssl=True)
+imap_object.login(email, password)
+imap_object.select_folder('INBOX', readonly=False)
 UIDs = imap_object.search(['ALL'])
-rawmessages = imap_object.fetch(UIDs,['BODY[]'])
+rawmessages = imap_object.fetch(UIDs, ['BODY[]'])
 unsub_links = []
 
 for index, uid in enumerate(UIDs):

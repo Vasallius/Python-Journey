@@ -1,4 +1,4 @@
-# ©️ Vasallius
+# Controlling Your Computer Through Email
 
 import imaplib
 import imapclient
@@ -24,7 +24,7 @@ while True:
 
     torrent_links = []
 
-    # RETREIVE MAGNET LINK
+    # RETRIEVE MAGNET LINK
     for message in rawmessages:
         raw_body = pyzmail.PyzMessage.factory(rawmessages[message][b'BODY[]'])
         if raw_body.text_part != None:
@@ -35,22 +35,21 @@ while True:
         # OPEN TORRENT AND START DOWNLOADING
         for link in torrent_links:
             # REPLACE WITH THE YOUR QBITTORRENT PATH
-            qb_process = subprocess.Popen([r'C:\Program Files\qBittorrent\qbittorrent.exe',link])
+            qb_process = subprocess.Popen(
+                [r'C:\Program Files\qBittorrent\qbittorrent.exe', link])
             qb_process.wait()
             print('Torrent file has finished downloading.')
-            smtpobj = smtplib.SMTP('smtp.gmail.com',587)
+            smtpobj = smtplib.SMTP('smtp.gmail.com', 587)
             smtpobj.ehlo()
             smtpobj.starttls()
-            smtpobj.login(MY_EMAIL,MY_PASSWORD)
+            smtpobj.login(MY_EMAIL, MY_PASSWORD)
             print(f'Sending completion message to {MY_EMAIL}')
-            smtpobj.sendmail(MY_EMAIL, MY_EMAIL,'Subject: Torrent File \nTorrent file has finished downloading.')
+            smtpobj.sendmail(
+                MY_EMAIL, MY_EMAIL, 'Subject: Torrent File \nTorrent file has finished downloading.')
             smtpobj.quit()
 
             # DELETE MESSAGE
             imap_obj.delete_messages(UIDs)
             imap_obj.expunge()
 
-    time.sleep(60 * 15) # REPEAT EVERY 15 MINUTES
-
-
-
+    time.sleep(60 * 15)  # REPEAT EVERY 15 MINUTES
