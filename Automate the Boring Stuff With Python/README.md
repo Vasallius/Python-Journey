@@ -101,3 +101,7 @@
   - [Custom Seating Cards](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch19-Manipulating%20Images/custom_seating_cards.py)
 
 - Chapter 20 – Controlling the Keyboard and Mouse with GUI Automation:
+
+    - [Looking Busy](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch20-Controlling%20the%20Keyboard%20and%20Mouse%20with%20GUI%20Automation/looking_busy.py)
+    - [Using the Clipboard to Read a Text Field](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch20-Controlling%20the%20Keyboard%20and%20Mouse%20with%20GUI%20Automation/using_the_clipboard_to_read_a_text_field.py)
+    - [Instant Messenger Bot](https://github.com/Vasallius/Python-Journey/blob/master/Automate%20the%20Boring%20Stuff%20With%20Python/Ch20-Controlling%20the%20Keyboard%20and%20Mouse%20with%20GUI%20Automation/instant_messenger_bot.py)
